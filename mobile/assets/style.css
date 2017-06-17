@@ -1,0 +1,214 @@
+body {
+	background-image: url('background.jpg');
+	background-position: center top;
+	background-size: auto auto;
+	background-repeat: no-repeat;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+.login {
+	position: absolute;
+	width: 80%;
+	height: 30%;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -25% 0 0 -40%;
+}
+.launch {
+	position: absolute;
+	width: 1000px;
+	height: 400px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -200px 0 0 -500px;
+}
+.register {
+	display: none;
+	position: absolute;
+	width: 800px;
+	height: 300px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -400px;
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	border: 0px solid #FFFFFF;
+	padding: 20px;
+}
+.registerForm {
+	position: absolute;
+	width: 600px;
+	height: 200px;
+	z-index: 15;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -300px;
+	background-color: transparent;
+}
+#displayBoxLogin {
+	background-color: #000000;
+	opacity: 0.6;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	border: 0px solid #000000;
+	padding: 20px;
+}
+#contentBoxLogin {
+	background-color: transparent;
+	width: 70%;
+	height: 25%;
+	margin: -25% 0 0 -33%;
+}
+#displayBoxLaunch {
+	background-color: #000000;
+	opacity: 0.6;
+	border-radius: 25px;
+	-moz-border-radius: 25px;
+	border: 0px solid #000000;
+	padding: 20px;
+}
+#contentBoxLaunch {
+	background-color: transparent;
+	width: 900px;
+	height: 375px;
+	margin: -175px 0 0 -450px;
+}
+
+.loginField {
+	background-color: transparent;
+	width: 80%;
+	border: 1px solid #FFFFFF;
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 3em;
+}
+.loginField::-webkit-input-placeholder {
+	color: #FFFFFF;
+}
+.loginField::-moz-placeholder {
+	color: #FFFFFF;
+}
+.loginField:-ms-input-placeholder {
+	color: #FFFFFF;
+}
+.loginField:-moz-placeholder {
+	color: #FFFFFF;
+}
+.loginButton {
+	background-color: transparent;
+	border: 1px solid #FFFFFF;
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 3em;
+}
+.registerField {
+	background-color: #FFFFFF;
+	width: 200px;
+	border: 1px solid #000000;
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+	color: #000000;
+	font-size: 1em;
+}
+.registerField::-webkit-input-placeholder {
+	color: #000000;
+}
+.registerField::-moz-placeholder {
+	color: #000000;
+}
+.registerField:-ms-input-placeholder {
+	color: #000000;
+}
+.registerField:-moz-placeholder {
+	color: #000000;
+}
+.registerButton {
+	background-color: transparent;
+	border: 1px solid #000000;
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+	color: #000000;
+	font-size: 1em;
+	width: 75px;
+	position: absolute;
+	left: 62.5px;
+}
+.space {
+	height: 5px;
+}
+.spaceRegister {
+	height: 10px;
+}
+.spaceHeader {
+	height: 20px;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 5em;
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+
+p {
+	color: #FFFFFF;
+	font-size: 2.5em;
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+}
+span {
+	color: #FFFFFF;
+	font-size: 2.5em;
+	font-family: 'Droid Sans', sans-serif;
+	text-align: center;
+}
+.error {
+	font-size: 0.8em;
+}
+.launchTitle {
+	float: left;
+}
+.launchUsername {
+	float: right;
+}
+.launchIcon {
+	width: 150px;
+	height: 150px;
+}
+.or {
+	font-size: 2.5em;
+}
+.font-black {
+	color: #000000;
+}
+.right {
+	float: right;
+}
+.registerHint {
+	color: #000000;
+	font-size: 0.8em;
+}
+.registerError {
+	color: #FF0000;
+	font-size: 0.8em;
+}
+#prismLogo {
+	height: auto;
+}
+img {
+	user-drag: none; 
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+}

@@ -1,0 +1,62 @@
+<?php
+	session_start();
+	$_SESSION["userTaken"] = "";
+	$servername = "localhost";
+	$username = "write";
+	$password = "QAQxy6vU";
+	$dbname = "sitedb";
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	if($conn->connect_error) {
+		die();
+	}
+	$fName = $_POST["fName"];
+	$sName = $_POST["sName"];
+	$eAddr = strtolower($_POST["eAddr"]);
+	$uName = $_POST["uName"];
+	$pWord = $_POST["pWord"];
+	$query = "SELECT * FROM members WHERE username = '" . $uName . "'";
+	$result = $conn->query($query);
+	if(!$result<?php
+        session_start();
+        $_SESSION["userTaken"] = "";
+        $servername = "localhost";
+        $username = "write";
+        $password = "QAQxy6vU";
+        $dbname = "sitedb";
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if($conn->connect_error) {
+                die();
+        }
+        $fName = $_POST["fName"];
+        $sName = $_POST["sName"];
+        $eAddr = strtolower($_POST["eAddr"]);
+        $uName = $_POST["uName"];
+        $pWord = $_POST["pWord"];
+        $query = "SELECT * FROM members WHERE username = '" . $uName . "'";
+        $result = $conn->query($query);
+        $row = $result->fetch_assoc();
+        if($row["username"] != $uName) {
+                $query = "INSERT INTO members (username, password, firstname, surname, email) VALUES (\'$uName\', \$pWord\', \'$fName\', \'$sName\', \'$eAddr\')";
+                $result = $conn->query($query);
+                $query = "SELECT * FROM members WHERE username = '" . $uName . "'";
+                echo "Query completed.";
+                $result = $conn->query($query);
+                $row = $result->fetch_assoc();
+                $_SESSION["userId"] = $row["id"];
+                echo $row["id"];
+                header("Location: /prismpad?page=launch");
+                die();
+        }
+?>) {
+		$query = "INSERT INTO members (username, password, firstname, surname, email) VALUES ('" . $uName . "', '" . $pWord . "', '" . $fName . "', '" . $sName . "', '" . $eAddr . "')";
+		$result = $conn->query($query);
+		$query = "SELECT * FROM members WHERE username = '" . $uName . "'";
+		echo "Query completed.";
+		$result = $conn->query($query);
+		$row = $result->fetch_assoc();
+		$_SESSION["userId"] = $row["id"];
+		echo $row["id"];
+		//header("Location: /prismpad?page=launch");
+		//die();
+	}
+?>
